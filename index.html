@@ -7,50 +7,76 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="container">
         <header>
-            <img src="schoollogo.jpg" alt="School Logo" class="logo">
-            <h1>School Admission Form</h1>
+            <img src="school-logo.png" alt="School Logo" class="logo">
+            <h1> Tiffany School Admission Form</h1>
+            <p>Contact: 7080666251 | Email: info@Tiffanyschool.com</p>
         </header>
+
         <form id="admissionForm">
-            <label for="name">Student's Name:</label>
-            <input type="text" id="name" name="name" required>
+            <h2>Student Information</h2>
+            <label for="studentName">Full Name:</label>
+            <input type="text" id="studentName" required>
 
             <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" required>
+            <input type="date" id="dob" required>
 
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="3" max="18" required>
-
-            <label for="aadhaar">Aadhaar Number:</label>
-            <input type="text" id="aadhaar" name="aadhaar" pattern="\d{12}" placeholder="Enter 12-digit Aadhaar number" required>
-
-            <label for="photo">Upload Student's Photo:</label>
-            <input type="file" id="photo" name="photo" accept="image/*" required>
-
-            <label for="parentPhone">Parent's Phone Number:</label>
-            <input type="tel" id="parentPhone" name="parentPhone" pattern="[0-9]{10}" placeholder="Enter 10-digit phone number" required>
-
-            <label for="address">Address:</label>
-            <textarea id="address" name="address" rows="3" required></textarea>
-
-            <label for="class">Class Applying For:</label>
-            <select id="class" name="class" required>
-                <option value="">Select Class</option>
-                <option value="Nursery">Nursery</option>
-                <option value="KG">KG</option>
-                <option value="1">Class 1</option>
-                <option value="2">Class 2</option>
-                <option value="3">Class 3</option>
-                <option value="4">Class 4</option>
-                <option value="5">Class 5</option>
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
             </select>
 
-            <label for="fee">Fee Details:</label>
-            <input type="text" id="fee" name="fee" placeholder="Fee Amount" required>
+            <label for="class">Class Applying For:</label>
+            <select id="class">
+                <option value="">Select</option>
+                <option value="Nursery">Nursery</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
 
-            <button type="submit">Submit</button>
+            <h2>Parent/Guardian Details</h2>
+            <label for="parentName">Parent/Guardian Name:</label>
+            <input type="text" id="parentName" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" rows="3"></textarea>
+
+            <h2>Fee Details</h2>
+            <p>Admission Fee: <strong>$5000</strong></p>
+            <p>Monthly Fee: <strong>$1200</strong></p>
+            <p>Other Charges: <strong>$50</strong></p>
+
+            <h2>Other Information</h2>
+            <label for="previousSchool">Previous School (if any):</label>
+            <input type="text" id="previousSchool">
+
+            <label>
+                <input type="checkbox" id="agreement" required>
+                I confirm that all information provided is correct.
+            </label>
+
+            <button type="submit">Submit Application</button>
         </form>
+
+        <footer>
+            <p>&copy; 2025 Tiffany School. All Rights Reserved.</p>
+        </footer>
     </div>
 
     <script src="script.js"></script>
