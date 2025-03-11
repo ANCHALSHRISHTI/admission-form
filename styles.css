@@ -21,6 +21,9 @@ header {
     padding: 15px;
     border-radius: 8px 8px 0 0;
 }
+.logo {
+    width: 100px;
+    height: auto;
 
 }
 
