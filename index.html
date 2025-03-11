@@ -22,4 +22,37 @@
             <label for="age">Age:</label>
             <input type="number" id="age" name="age" min="3" max="18" required>
 
-            <label for="aadhaar">Aadha
+            <label for="aadhaar">Aadhaar Number:</label>
+            <input type="text" id="aadhaar" name="aadhaar" pattern="\d{12}" placeholder="Enter 12-digit Aadhaar number" required>
+
+            <label for="photo">Upload Student's Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <label for="parentPhone">Parent's Phone Number:</label>
+            <input type="tel" id="parentPhone" name="parentPhone" pattern="[0-9]{10}" placeholder="Enter 10-digit phone number" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="class">Class Applying For:</label>
+            <select id="class" name="class" required>
+                <option value="">Select Class</option>
+                <option value="Nursery">Nursery</option>
+                <option value="KG">KG</option>
+                <option value="1">Class 1</option>
+                <option value="2">Class 2</option>
+                <option value="3">Class 3</option>
+                <option value="4">Class 4</option>
+                <option value="5">Class 5</option>
+            </select>
+
+            <label for="fee">Fee Details:</label>
+            <input type="text" id="fee" name="fee" placeholder="Fee Amount" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
